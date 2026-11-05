@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: system-ui, sans-serif;
+}
+
+/* Header style */
+header {
+    background-color: chocolate;
+}
+
+h1 {
+    color: #e6e6e6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section style */
+section {
+    margin-top: 50px;
+}
+
+/* rgb boxes style */
+.rgb-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.red-box {
+    background-color: red;
+}
+
+.green-box {
+    background-color: green;
+}
+
+.blue-box {
+    background-color: blue;
+}
+
+/* Chocolate boxes style */
+.chocolate-boxes {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.choco-box {
+    background-color: chocolate;
+}
+
+/* Width and height boxes style */
+.red-box,
+.green-box,
+.blue-box,
+.choco-box {
+    width: 200px;
+    height: 400px;
+}
+
+/* Tablet media screen */
+@media screen and (max-width: 1024px) {
+    .rgb-boxes,
+    .chocolate-boxes {
+        display: none;
+    }
+
+    header {
+        background-color: black;
+    }
+
+    .chess-board {
+        display: grid;
+        grid-template-columns: repeat(5, 100px);
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .black-square,
+    .white-square {
+        width: 100px;
+        height: 100px;
+    }
+
+    .black-square {
+        background-color: black;
+    }
+
+    .white-square {
+        background-color: #e6e6e6;
+    }
+}
+
+/* Mobile media screen */
+@media screen and (max-width: 768px) {
+    .chess-board {
+        display: none;
+    }
+
+    header {
+        background-color: black;
+    }
+
+    h1 {
+        color: #e6e6e6;
+    }
+
+    .blue-ring,
+    .black-ring,
+    .red-ring,
+    .yellow-ring,
+    .green-ring {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .blue-ring {
+        border: 5px solid blue;
+    }
+
+    .black-ring {
+        border: 5px solid black;
+    }
+
+    .red-ring {
+        border: 5px solid red;
+    }
+
+    .yellow-ring {
+        border: 5px solid yellow;
+    }
+
+    .green-ring {
+        border: 5px solid green;
+    }
+
+    .olympic-rings {
+        display: grid;
+        grid-template-columns: repeat(6, 50px);
+        grid-template-rows: repeat(2, 50px);
+        width: max-content;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .blue-ring {
+        grid-column: 1;
+    }
+
+    .black-ring {
+        grid-column: 3;
+    }
+
+    .red-ring {
+        grid-column: 5;
+    }
+
+    .yellow-ring {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .green-ring {
+        grid-column: 4;
+        grid-row: 2;
+    }
+}
